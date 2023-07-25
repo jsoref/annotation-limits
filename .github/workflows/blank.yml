@@ -11,98 +11,89 @@ jobs:
       - name: first
         run: |
           for a in $(seq 10); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
       - name: second
         run: |
           for a in $(seq 10 20); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
       - name: third
         run: |
           for a in $(seq 20 30); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
       - name: fourth
         run: |
           for a in $(seq 30 40); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
       - name: fifth
         run: |
           for a in $(seq 40 50); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
       - name: sixth
         run: |
           for a in $(seq 50 60); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
           done
 
   right:
     runs-on: ubuntu-latest
 
-      - name: first
-        run: |
-          for a in $(seq 10); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-      - name: second
         run: |
           for a in $(seq 10 20); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
           done
 
       - name: third
         run: |
           for a in $(seq 20 30); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
           done
 
       - name: fourth
         run: |
           for a in $(seq 30 40); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
           done
 
       - name: fifth
         run: |
           for a in $(seq 40 50); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
           done
 
       - name: sixth
         run: |
           for a in $(seq 50 60); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
           done
