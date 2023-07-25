@@ -8,102 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: first
+      - name: random
         run: |
-          for a in $(seq 10); do
+          for a in "isochlor 21" "hyomental 19" "contravindicate 9" "rhabdoid 36" "unexistence 46" "pressor 33" "sate 37" "Triangulum 44" "pectinic 30" "Polymyodi 32" "Phrygian 31" "unatmospheric 45" "clinohedrite 8" "opposer 28" "Eva 14" "greenhearted 17" "tachygraph 42" "ascophore 3" "ovigerm 29" "nonpathogenic 27" "lacertiform 22" "subpunctuation 41" "septenniality 38" "squalor 40" "inenarrable 20" "puffin 34" "dermutation 11" "Naga 26" "gaminesque 16" "rechurn 35" "barrico 4" "curlike 10" "albarello 1" "fixed 15" "Dob 12" "unpredacious 47" "cerebromeningeal 7" "bleatingly 5" "meatotomy 24" "upshoot 48" "cabalic 6" "antennate 2" "thiamide 43" "misreceive 25" "loin 23" "waldgrave 49" "embrasure 13" "slopely 39" "yuleblock 50" "heptamerous 18" ; do
             echo "::notice ::notice $a"
             echo "::warning ::warning $a"
             echo "::error ::error $a"
-          done
-
-      - name: second
-        run: |
-          for a in $(seq 10 20); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-      - name: third
-        run: |
-          for a in $(seq 20 30); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-      - name: fourth
-        run: |
-          for a in $(seq 30 40); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-      - name: fifth
-        run: |
-          for a in $(seq 40 50); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-      - name: sixth
-        run: |
-          for a in $(seq 50 60); do
-            echo "::notice ::notice $a"
-            echo "::warning ::warning $a"
-            echo "::error ::error $a"
-          done
-
-  right:
-    runs-on: ubuntu-latest
-    steps:
-
-      - name: first
-        run: |
-          for a in $(seq 10); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
-          done
-
-      - name: second
-        run: |
-          for a in $(seq 10 20); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
-          done
-
-      - name: third
-        run: |
-          for a in $(seq 20 30); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
-          done
-
-      - name: fourth
-        run: |
-          for a in $(seq 30 40); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
-          done
-
-      - name: fifth
-        run: |
-          for a in $(seq 40 50); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
-          done
-
-      - name: sixth
-        run: |
-          for a in $(seq 50 60); do
-            echo "::notice ::!notice $a"
-            echo "::warning ::!warning $a"
-            echo "::error ::!error $a"
           done
