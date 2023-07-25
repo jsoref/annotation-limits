@@ -60,6 +60,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
+      - name: first
+        run: |
+          for a in $(seq 10); do
+            echo "::notice ::!notice $a"
+            echo "::warning ::!warning $a"
+            echo "::error ::!error $a"
+          done
+
+      - name: second
         run: |
           for a in $(seq 10 20); do
             echo "::notice ::!notice $a"
