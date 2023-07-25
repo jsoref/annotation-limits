@@ -4,13 +4,41 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  left:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run a multi-line script
+      - name: first
         run: |
-          for a in $(seq 20); do
+          for a in $(seq 10); do
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
+          done
+
+      - name: second
+        run: |
+          for a in $(seq 10 20); do
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
+          done
+
+  right:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: first
+        run: |
+          for a in $(seq 20 30); do
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
+          done
+
+      - name: second
+        run: |
+          for a in $(seq 30 40); do
             echo "::notice ::notice $a"
             echo "::warning ::warning $a"
             echo "::error ::error $a"
