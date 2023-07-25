@@ -58,6 +58,7 @@ jobs:
 
   right:
     runs-on: ubuntu-latest
+    steps:
 
         run: |
           for a in $(seq 10 20); do
