@@ -1,0 +1,17 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run a multi-line script
+        run: |
+          for a in $(seq 20); do
+            echo "::notice ::notice $a"
+            echo "::warning ::warning $a"
+            echo "::error ::error $a"
+          done
